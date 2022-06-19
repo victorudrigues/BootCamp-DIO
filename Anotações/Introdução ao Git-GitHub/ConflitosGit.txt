@@ -1,0 +1,19 @@
+**** Quando sua versão está mais antiga ****
+- Depois da alteração da outra pessoa, você tem que atualizar manualmente
+
+- Para puxar as atualizações que está no GITHUB e não tem na nossa máquina:
+git pull origin master
+
+e após fazemos o passo de sempre
+- git add *
+- git commit -m 
+- git push origin master
+
+
+*** Baixando Repositórios ***
+git clone através do link
+
+Para saber se é um repositório temos que verificar se existe a pasta .git
+
+e obervar qual o repositório ele está vinculado:
+git remote -v

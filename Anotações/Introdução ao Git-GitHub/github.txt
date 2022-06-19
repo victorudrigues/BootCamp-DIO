@@ -1,0 +1,25 @@
+
+***Autenticação***
+
+* Chave SSH
+
+Comandos no git: ssh-keygen -t ed25519 -C viictorhgoliveira@gmail.com
+passa onde a chave tbm irão ficar.
+
+- Minha identificação foi salva em c:user/victor/.ssh/
+- Minha salve publica tbm
+
+ssh edge: fica encarregado de lidar com as chaves
+
+Passos: 
+- Criar chave(ssh-keygen)
+- Colocar essa chave(Pública) no GITHUB (settings keys)
+
+- Startar o projeto (Eval)
+- Depois de criar o agente passo a chave(privada) para ele
+
+
+**Token  de acesso pessoal**
+
+Setting > tokens 
+- Passo: Apenas 

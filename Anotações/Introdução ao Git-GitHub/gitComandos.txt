@@ -1,0 +1,68 @@
+**  Comando **
+parainiciar o git: git init
+é criado após a sua inicialzação uma pasta oculta, na qual o git é responsável
+por armazenar todo o código e versionamentos. Pasta(.git)
+
+Vizualizar pasta oculta: ls -a
+
+dentro da pasta .git terá:
+- hooks
+- info
+- objects
+- refs
+
+voltando para o livro de receitas, antes de criar o arquivo necessitamos passar um autor:
+configurações antes de criar uma arquivo..
+- git config --global user.email "viictorhgoliveira@gmail.com"
+
+Configuração global enquanto passo o usuário como email ou seja o autor.
+
+EM seguida passo um usuário:
+ git config --global user.name victorudrigues
+
+*** Adicionando um arquivo ***
+
+Para adicionar o arquivo: git add * 
+Para commitar(Explicar a alteração): git commit -m "mensagem explicativa para alteração"
+
+*** Perceba que trás o sha1, a mensagem comitada, o número de inserção e o arquivo.
+$ git commit -m "commit inicial"
+[master (root-commit) 9cbede2] commit inicial
+ 1 file changed, 17 insertions(+)
+ create mode 100644 macarronada.md
+
+ Monitoramento das ações: git status
+
+
+ > git add + nome do arquivo
+ > git add *
+ > git add .
+
+ Verificando as configurações: git config --list
+
+ * Antes do commit ele não acha essas configurações
+ * Após usar o comando é necessário fazer a Configuração global
+ Modificando a Configuração: git config --global --unset + nome do campo que quero modificar
+
+ ---- MUDANDO REPOSITÓRIO -----
+ Caso tenho errado a Configuração utilize:
+ remover: git remote rm origin 
+
+
+ ------SUBINDO PARA O GITHUB---------
+ - Indicar a origem do arquivo a ser enviado
+ git remote add origin + link
+
+ - Verificando a lista dos repositórios cadastrados
+ git remote -v
+
+ - Empurrando para o repositório remoto
+ git push origin master // Repare que o origin é o https, ou seja, um alias como no sql
+
+
+---------------------------------------------------------------------------------
+* Markdown
+Título 1: #
+Título 2: ##
+Título 3: ## e assim, sucessivamente até o nível 6
+

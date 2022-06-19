@@ -1,0 +1,62 @@
+** Ciclos de Vidas dos Arquivos **
+
+- Git init: Cria .git e inicia o repositório
+
+Tracked e Untracked
+
+Tracked são os arquivos rastreados, ou seja, que o git tem ciência deles.
+Classificados em:
+- Unmodefied: Arquivo que nn foi modificado ainda
+- Modefied: Arquivo que já sofreu alguma alteração
+- Staged: Arquivos que estão se preparando para outro tipos de agrupamentos.
+
+Untracked: são os arquivos que o git nn tem ciência da existências dele.
+
+Quando criamos o arquivo:
+Com o git init o arquivo está como Untracked pois acabamos de cria-lo.
+- Quando salvamos com macarronada.md
+
+Quando utilizamos o git add:
+Ele moveu o arquivo para o Stage que é a área que está esperando alguma coisa.
+- git add *
+
+Quando o arquivo não sofreu nenhuma alteração ele está como Unmodefied:
+Pois não inserimos nada nele.
+
+Após alteração seu estado muda para Modefied:
+Ele muda o stado comparando os sha1, de quando ele estava como Unmodefied e depois da alteração como Modefied
+
+Se rodarmos git add * depois do arquivo está com Modefied:
+Ele retorna para stage, pois espera alguma ação
+
+
+Se o arquivo está como Unmodefied e removemos ele:
+Ele volta como Untracked, pois não tinha sofrido nada de alteração
+
+Quando mudamos o arquivo para o stage: 
+Após o add *, qual ação que o arquivo espera receber?
+Um commit, ou seja, quando rodamos git add*, o próximo passo do arquivo é receber um commit. 
+
+Depois do commit, que junta todas as alterações e grava o arquivo volta para Modefied
+para recomeçar o clico.
+
+---- O que o Repositório representa? ----
+
+Nesse momento a gente tem 2 ambientes: Pois o git é um sistema Distribuído 
+- Desenvolvimento(Tudo que está na máquina)
+- GITHUB(Tudo que está no servidor)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

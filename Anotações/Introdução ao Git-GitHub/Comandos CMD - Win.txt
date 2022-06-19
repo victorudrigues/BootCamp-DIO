@@ -1,0 +1,33 @@
+Comandos básicos para usar no cmd:
+
+
+Listar pasta e arquivos: dir
+
+Navegando nas pastas: cd indo pra raiz cd /
+
+Mover arquivo: mv + nome do arquivo ./nome da pasta destino
+
+Retroceder níveis: cd ..
+
+limpar terminal: cls
+
+Criar: mkdir pasta
+
+Criar arquivos: Echo hello > hello.txt criei um arquivo hello.txt e dentro terá o texto hello
+
+Deletar: del + nome da pasta = para deletar arquivo
+
+deletar pasta: rmdir
+
+***GIT BASH****
+Limpar: clear
+navegar: cd c/users/victor
+mostrar arquivos: ls
+mostrar caminho completo: pwd
+inserir criptografia: openssl sha1 + nome do arquivo com extensão
+criar chave NO GITHUB:  ssh-keygen -t ed25519 -C viictorhgoliveira@gmail.com
+inicializar o ssh edge: eval $(ssh-agent -s) criando o agente
+entregar a chave para o agent: ssh-add + chave privada
+
+
+

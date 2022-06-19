@@ -1,0 +1,41 @@
+- SHA 1
+- Objetos fundamentais
+- Sistema Distribuído
+- Segurança
+
+*** SHA 1 ***
+Algoritmo de criptação gerando um conjunto de caracteres de 40 dígitos
+a cada alteração gerando uma chave diferente.
+
+Comando para gerar a criptografia no git Bash: openssl sha1 + nome do arquivo
+
+Isso serve para verificar se o arquivo teve alguma alteração ou nn.
+
+*** Objetos fundamentais ***
+- BLOBS - Armazenam o sha1
+Bloco base de componentização = * TAMANHO *CONTEÚDO E UMA \0 = Componentes do BLOB
+
+- TREES/Arvores = Tem tamanho, \0, sha1 e armazena o nome do arquivo
+As arvores formam a estrura de onde estão localizado os arquivos, apontando para blobs ou outras arvores
+* Armazenam BLOBS e apontam para BLOBS diferentes
+
+arvores tem um sha1 próprio, que armazena um blob que tbm tem um sha1 próprio, mas 
+se o arquivo for alterado, o sha1 do blob muda, refletindo no sha1 da arvore
+
+
+- COMMITS = Posso escrever uma mensagem que estará dando sentido para essas alterações/pastas e afins
+Aponta para:
+Arvores/TREES
+parente
+autor
+mensagem
+timestamp: Carimbo de tempo - leva horário e data da hora do commit
+
+commit tbm tem seu próprio sha1
+
+
+*** Sistema Distribuído ***
+ex: tenho um repositório no gitHUB na nuvem e ele representa o estado final do código
+e veja que tem 40 pessoas utilizando e mantendo o código regular.
+Cada pessoa terá uma versão confiável em sua máquina, caso o código principal se perca
+terá outros 40 códigos confiáveis par serem utilizados.
