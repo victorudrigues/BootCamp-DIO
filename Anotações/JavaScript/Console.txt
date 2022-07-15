@@ -1,0 +1,2 @@
+Para utilizar o terminal com servidor e ver o código js rodando, instalamos o Node.
+Que é responsável por rodar aplicação js fora da web.
