@@ -18,3 +18,7 @@ function decrement() {
   currentNumber = currentNumber - 1
   currentNumberwrapper.innerHTML = currentNumber
 }
+
+// addEventListener
+// 0<=count=<
+// Mudar a cor quando valor for alterado

@@ -1,0 +1,4 @@
+Number() = Converte um valor em números
+Prompt() = Pede uma entrada de dados ao usuário
+Alert() = para mostrar mensagem ao usuário
+Template Strings - Usa variáveis, constantes e textos

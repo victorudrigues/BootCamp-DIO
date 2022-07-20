@@ -1,0 +1,31 @@
+Variáveis e tipos:
+
+Guardam valores do tipo: Boolean, null, undefined, Number, String, Arraym Object, Function
+
+var: escopo global e local, pode ter seu valor alterado
+let: escopo local de bloco, pode ter seu valor alterado
+const: escopo local de bloco, somente leitura e obrigatóriamente precisa de um valor inicial
+
+Atribuição "="
+Comparação "==" retorna um Boolean
+Comparação identica "==="
+
+Sinal de Atribuição
+soma: +
+subtração: -
+multiplicação: *
+divisão: /
+resto: %
+potencialização: **
+
+Relacionais:
+
+Menor: -
+maior: +
+Maior ou igual: >=
+Menor ou igual: <=
+
+Lógicos:
+&&: e
+||: ou
+!: Não
