@@ -64,7 +64,7 @@ function calculadora() {
     // - Jogo a  opcao para ser tratada após o usuário informar os dados
     // - se for 1, chamo a calculadora novamente
     // - Se for 2, encerro
-    // - Qualquer outro valor chamo a função novamente
+    // - Qualquer outro valor chamo a função novamente..fd
     function novaOperacao() {
       let opcao = prompt(' Deseja fazer outra alteração? \n 1 - Sim\n 2 - Não')
       if (opcao == 1) {
